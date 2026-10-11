@@ -1,0 +1,19 @@
+{
+  "gemini_api_key": "YOUR_GEMINI_API_KEY",
+  "groq_api_key": "YOUR_GROQ_API_KEY",
+  "groq_coding_model": "qwen/qwen3.8-27b",
+  "assistant_name": "JARVIS",
+  "user_name": "Boss",
+  "os_system": "mac",
+  "hud_style": "core",
+  "push_to_talk_enabled": false,
+  "camera_index": 0,
+  "turn_tuning": {
+    "enabled": true,
+    "silence_ms": 2000,
+    "prefix_ms": 250,
+    "end_sensitivity": "low",
+    "start_sensitivity": "default"
+  },
+  "proactive_audio": false
+}
