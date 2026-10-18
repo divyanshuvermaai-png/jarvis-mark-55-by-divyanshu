@@ -371,3 +371,23 @@ def save_plugin_enabled(plugin_name: str, enabled: bool) -> None:
     plugins_cfg[plugin_name] = enabled
     data["plugins_enabled"] = plugins_cfg
     CONFIG_FILE.write_text(json.dumps(data, indent=4), encoding="utf-8")
+
+
+def get_telegram_bot_token() -> str:
+    """Return the configured Telegram Bot token from @BotFather."""
+    return str(load_api_keys().get("telegram_bot_token", "") or "").strip()
+
+
+def save_telegram_bot_token(token: str) -> None:
+    """Save the Telegram Bot token to config."""
+    _patch_config(telegram_bot_token=token.strip())
+
+
+def get_telegram_chat_id() -> str:
+    """Return the authorized Telegram Chat ID of Boss."""
+    return str(load_api_keys().get("telegram_chat_id", "") or "").strip()
+
+
+def save_telegram_chat_id(chat_id: str | int) -> None:
+    """Save the authorized Telegram Chat ID to config."""
+    _patch_config(telegram_chat_id=str(chat_id).strip())

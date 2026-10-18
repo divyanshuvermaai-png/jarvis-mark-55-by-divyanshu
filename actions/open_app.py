@@ -248,6 +248,11 @@ def open_app(
     if not app_name:
         return "No application name provided."
 
+    if app_name.lower().strip() in ("youtube", "youtube.com"):
+        import webbrowser
+        webbrowser.open("https://www.youtube.com")
+        return "Opened YouTube in your browser."
+
     launcher = _OS_LAUNCHERS.get(_SYSTEM)
     if launcher is None:
         return f"Unsupported operating system: {_SYSTEM}"

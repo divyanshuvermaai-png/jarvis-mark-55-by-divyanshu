@@ -93,6 +93,9 @@ from core.viseme               import VisemeStream
 from core.wake_word            import (
     WakeWordDetector, is_ready as wake_is_ready, install_and_download as wake_install,
 )
+from core.notifier             import set_hud_logger
+from core.scheduler            import start_scheduler_runner, set_proactive_callback as set_scheduler_proactive_cb
+from core.telegram_bridge      import start_telegram_bridge, set_telegram_logger
 
 # How long the assistant stays awake with no user speech before it auto-sleeps
 # again (wake-word mode only).
@@ -2157,6 +2160,16 @@ class JarvisLive:
         except Exception as e:
             print(f"[Dashboard] Disabled: {e}")
             self._dashboard = None
+
+        # Start autonomous services: Notifier HUD hook, Scheduler daemon, and Telegram bridge
+        try:
+            set_hud_logger(self.ui.write_log)
+            set_telegram_logger(self.ui.write_log)
+            set_scheduler_proactive_cb(self.plugin_say)
+            start_scheduler_runner()
+            start_telegram_bridge()
+        except Exception as e:
+            print(f"[Services] Startup warning: {e}")
 
         while True:
             try:

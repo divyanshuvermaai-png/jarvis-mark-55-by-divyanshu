@@ -191,6 +191,19 @@ def _send_whatsapp(receiver: str, message: str) -> str:
             f"say it was sent.")
 
 def _send_telegram(receiver: str, message: str) -> str:
+    try:
+        from core.telegram_bridge import get_telegram_client
+        tg = get_telegram_client()
+        if tg.is_configured():
+            target_text = message
+            r_lower = receiver.lower().strip()
+            if r_lower not in ("me", "boss", "myself", "telegram", ""):
+                target_text = f"<b>To {receiver}:</b>\n{message}"
+            if tg.send_message(target_text):
+                return f"Message delivered to {receiver} via Telegram Bot API."
+    except Exception as e:
+        print(f"[SendMessage] Telegram Bot API delivery failed ({e}) — falling back to desktop.")
+
     return _desktop_send("Telegram", receiver, message)
 
 def _send_signal(receiver: str, message: str) -> str:

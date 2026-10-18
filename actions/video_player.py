@@ -90,10 +90,13 @@ def _resolve_youtube(url_or_query: str) -> tuple[str, str, str, str]:
                             "cannot be played inside the HUD. "
                             "Run: pip install yt-dlp")
 
-    query = url_or_query if _YT.search(url_or_query) else f"ytsearch1:{url_or_query}"
-    # Ask for android/ios client streams as well: they are unthrottled by YouTube
-    # (measured at 47+ Mbps vs 250 kbps on web), and they offer combined format 18
-    # (H.264 + AAC) which plays in a single stream with zero drift and zero buffering.
+    try:
+        from actions.youtube_video import clean_youtube_query
+        cleaned = clean_youtube_query(url_or_query)
+    except Exception:
+        cleaned = url_or_query
+
+    query = url_or_query if _YT.search(url_or_query) else f"ytsearch1:{cleaned}"
     opts = {
         "quiet": True,
         "no_warnings": True,
@@ -106,15 +109,29 @@ def _resolve_youtube(url_or_query: str) -> tuple[str, str, str, str]:
             }
         },
     }
+    info = None
     try:
         with yt_dlp.YoutubeDL(opts) as ydl:
             info = ydl.extract_info(query, download=False)
-        if info and info.get("entries"):
-            info = info["entries"][0]
-        if not info:
-            return "", "", "", "nothing was found for that."
-    except Exception as e:
-        return "", "", "", f"the video could not be resolved: {e}"
+    except Exception:
+        # Fall back without player_client restrictions if SABR throttled
+        try:
+            fallback_opts = {
+                "quiet": True,
+                "no_warnings": True,
+                "skip_download": True,
+                "noplaylist": True,
+                "playlist_items": "1",
+            }
+            with yt_dlp.YoutubeDL(fallback_opts) as ydl:
+                info = ydl.extract_info(query, download=False)
+        except Exception as e:
+            return "", "", "", f"the video could not be resolved: {e}"
+
+    if info and info.get("entries"):
+        info = info["entries"][0]
+    if not info:
+        return "", "", "", "nothing was found for that."
 
     formats = [f for f in (info.get("formats") or [])
                if str(f.get("protocol") or "").startswith("http") and f.get("url")]
@@ -342,23 +359,19 @@ def _say(player, instruction: str) -> None:
 TOOL = {
     "name": "video_player",
     "description": (
-        "If user wants to open a video on YouTube, he will tell you that specifically"
-        "If user wants to play a video, then he wants to call this feature"
         "Plays a VIDEO on the assistant's own display, where the avatar "
         "normally is — and stops it, mutes it or unmutes it. Use whenever the "
-        "user wants to WATCH something on screen: 'play the new Dune trailer', "
-        "'şu videoyu oynat', 'play C:/clips/holiday.mp4', 'put that YouTube "
-        "video on the screen', 'stop the video', 'videoyu kapat', 'turn the "
-        "sound on', 'sesi aç', 'mute it'. Accepts a local file path, a direct "
+        "user wants to WATCH something directly on the display/screen: 'play the new Dune trailer', "
+        "'play C:/clips/holiday.mp4', 'put that video on the screen', "
+        "'stop the video', 'turn the sound on', 'mute it'. Accepts a local file path, a direct "
         "video URL, a YouTube link, or a description to search YouTube for. "
         "Video always starts MUTED — only call action='unmute' when the user "
         "actually asks to hear it. "
         "This returns the moment it is asked, before the picture appears: when "
         "it answers 'status=opening', say in one short sentence that you are "
         "putting it on the display, and do not wait or call it again. "
-        "Do NOT use 'youtube_video' for this: that optional plugin opens videos "
-        "in the web browser and summarises transcripts, it never plays anything "
-        "on the assistant's display."
+        "Use this ONLY when user wants the video on the display HUD. "
+        "If the user wants to play a song/video in YouTube in their web browser or search YouTube, use 'youtube_video'."
     ),
     "parameters": {
         "type": "OBJECT",

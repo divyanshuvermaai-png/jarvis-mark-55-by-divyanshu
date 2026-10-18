@@ -330,6 +330,18 @@ def reminder(
     if not job_id:
         return "I couldn't register the reminder with the system scheduler."
 
+    try:
+        from core.scheduler import add_schedule
+        add_schedule(
+            title=f"Reminder: {safe_msg[:30]}",
+            time_str=time_str,
+            date_str=date_str,
+            recurring="once",
+            message=safe_msg,
+        )
+    except Exception as e:
+        print(f"[Reminder] Scheduler sync error: {e}")
+
     if player:
         player.write_log(f"[Reminder] ✅ {date_str} {time_str} — {safe_msg[:40]}")
 
