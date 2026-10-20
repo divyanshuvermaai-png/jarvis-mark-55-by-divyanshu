@@ -122,7 +122,18 @@ def get_system_status() -> dict:
     uptime_h    = int(uptime_secs // 3600)
     uptime_m    = int((uptime_secs % 3600) // 60)
 
-    return {
+    battery_info = None
+    try:
+        b = psutil.sensors_battery()
+        if b is not None:
+            battery_info = {
+                "percent": round(b.percent, 1),
+                "power_plugged": bool(b.power_plugged),
+            }
+    except Exception:
+        pass
+
+    res = {
         "cpu_percent":   round(cpu, 1),
         "ram_percent":   round(ram.percent, 1),
         "ram_used_gb":   round(ram.used   / 1024 ** 3, 1),
@@ -132,6 +143,10 @@ def get_system_status() -> dict:
         "uptime":        f"{uptime_h}h {uptime_m}m",
         "process_count": len(psutil.pids()),
     }
+    if battery_info is not None:
+        res["battery_percent"] = battery_info["percent"]
+        res["power_plugged"]   = battery_info["power_plugged"]
+    return res
 
 
 class SystemMonitor:
@@ -161,6 +176,17 @@ class SystemMonitor:
             return None
 
         alerts: list[str] = []
+
+        try:
+            b = psutil.sensors_battery()
+            if b is not None and not b.power_plugged and b.percent <= 15.0 and self._can_alert("battery"):
+                alerts.append(
+                    f"[SYSTEM_ALERT] Battery is critically low ({b.percent:.0f}%). "
+                    "Warn the user in their language to connect their charger."
+                )
+                self._record("battery")
+        except Exception:
+            pass
 
         if cpu >= self.thresholds["cpu"]:
             self._cpu_streak += 1

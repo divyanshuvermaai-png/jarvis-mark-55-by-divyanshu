@@ -1,111 +1,84 @@
-# JARVIS MARK 55 — OFFICIAL CREDITS
+# JARVIS MARK 55 — OFFICIAL CREDITS & ATTRIBUTION
 
-**Project:** JARVIS Mark 55  
-**Original Creator & Lead Developer:** Divyanshu Verma  
-**Organization / Project Identity:** Divyanshu Industries  
-**Copyright Notice:** © 2026 Divyanshu Verma. All rights reserved, except where a separate license or third-party license states otherwise.  
-**Credits File:** `CREDITS.md`
-
----
-
-## 1. Original Creator
-
-JARVIS Mark 55 is an independent software project created and developed under the direction of **Divyanshu Verma**. The project's vision, creative direction, planning, development decisions, project-specific implementation, integration work, and original materials should be credited to Divyanshu Verma wherever attribution is appropriate and accurate.
-
-JARVIS Mark 55 explores the idea of an intelligent personal assistant that brings together conversational artificial intelligence, voice interaction, multimodal capabilities, desktop tools, automation, memory, and a futuristic user interface. The exact capabilities available depend on the version, configuration, APIs, and components included in a particular release.
-
-**Please credit the project as follows when referring to the original project:**
-
-> **JARVIS Mark 55 — created and developed by Divyanshu Verma.**  
-> Official creator profile: https://github.com/divyanshuvermaai-png
-
-This attribution identifies the original project and its creator. It does not, by itself, grant permission to copy, modify, redistribute, or commercially use project materials; those permissions are governed by the applicable license and relevant law.
-
-## 2. Creator Profile & Official Links
-
-- **Name:** Divyanshu Verma
-- **Role:** Original Creator, Founder, Lead Developer, and Project Owner
-- **Organization / Brand:** Divyanshu Industries
-- **GitHub Profile:** https://github.com/divyanshuvermaai-png
-- **YouTube:** https://www.youtube.com/@divyanshu_sovereign_agent
-- **Instagram:** https://www.instagram.com/the_divyanshu_group/
-- **Instagram — Sovereign Agent:** https://www.instagram.com/divyanshu_sovereign_agent/
-- **Portfolio:** https://air-m5.lovable.app
-
-For licensing, collaboration, permission requests, or other project-related enquiries, please contact the creator through the communication channels listed on the GitHub profile or project repository.
-
-## 3. Project Purpose & Direction
-
-JARVIS Mark 55 is developed as an AI-powered personal assistant and intelligent desktop system. Its development direction includes exploring:
-
-- Natural voice interaction and conversational AI.
-- Integration with supported AI models and services.
-- Audio input, speech output, and conversational turn-taking.
-- A custom futuristic user interface and visual effects.
-- Tool integrations and computer-assisted workflows.
-- Configurable activation and interaction modes.
-- Context and memory features where implemented.
-- Modular design and future extensibility.
-- Privacy-conscious and local-first approaches where technically practical.
-
-These items describe project goals and areas of development, not a guarantee that every feature is available in every release.
-
-## 4. Original Work & Attribution
-
-Project-specific source code, original interface implementations, custom graphics and animations, integration logic, documentation, configuration, and project organization may include original work by Divyanshu Verma. Attribution should reflect the actual contribution and ownership of each component.
-
-Do not falsely claim to be the original creator of JARVIS Mark 55 or misrepresent the project's origin. Do not remove or alter existing copyright, authorship, or license notices in materials where they must be retained under the applicable terms.
-
-The project's name, branding, and identity must not be used to imply endorsement, partnership, or official authorization by the creator where no such authorization exists.
-
-## 5. Third-Party Technologies & Acknowledgements
-
-JARVIS Mark 55 may depend on or integrate third-party frameworks, libraries, AI models, APIs, developer tools, fonts, icons, or other resources. Those technologies and materials remain the property of their respective authors and rights holders and are governed by their own licenses and terms.
-
-**Third-party acknowledgement policy:**
-
-- Credit libraries, frameworks, models, APIs, assets, and other resources actually used in the version being distributed.
-- Preserve notices and attribution required by their respective licenses.
-- Check the repository's dependency files and bundled asset notices before adding or removing acknowledgements.
-- Do not interpret this credits file as claiming ownership of third-party technologies or granting rights to use them beyond their terms.
-
-A separate, verified list of dependencies should be maintained from the project's actual dependency and asset files. No third-party tool or service is represented here as a confirmed dependency solely by being mentioned in project discussions.
-
-## 6. AI-Assisted Development
-
-AI models or development tools may be used during research, prototyping, coding assistance, debugging, interface exploration, or documentation. Their use should be described accurately when relevant. The final repository should identify any external code, assets, or contributions that require attribution or are subject to separate terms. This file does not claim that every part of the project was created without assistance, nor does it transfer ownership of third-party material to the project creator.
-
-## 7. Contributors
-
-**Original Creator & Lead Developer:** Divyanshu Verma  
-**Additional Contributors:** Add names here when their contributions have been verified and they have agreed to be credited.
-
-Contributors should be credited for their actual accepted contributions. Any ownership, licensing, or redistribution rights relating to contributed material are governed by the applicable agreements and licenses.
-
-## 8. Copyright & License
-
-**Copyright © 2026 Divyanshu Verma. All rights reserved, subject to applicable third-party rights and licenses.**
-
-This file records authorship and attribution; it is not a substitute for the repository's `LICENSE` file. Please consult `LICENSE` for the permissions and restrictions that apply to the project. Third-party components remain subject to their own licenses. Nothing in this document claims ownership over third-party intellectual property, general ideas, programming languages, public APIs, or independently created implementations.
-
-## 9. Repository & Project Links
-
-- **Creator's GitHub:** https://github.com/divyanshuvermaai-png
-- **Current Repository:** https://github.com/divyanshuvermaai-png/jarvis-mark-55-by-divyanshu
-- **Previously used JARVIS repository:** https://github.com/divyanshuvermaai-png/jarvis-mark-54-for-mac
-- **YouTube:** https://www.youtube.com/@divyanshu_sovereign_agent
-- **Instagram:** https://www.instagram.com/the_divyanshu_group/
-- **Instagram — Sovereign Agent:** https://www.instagram.com/divyanshu_sovereign_agent/
-- **Portfolio:** https://air-m5.lovable.app
-
-## 10. Final Acknowledgement
-
-JARVIS Mark 55 is a project created and developed under the direction of **Divyanshu Verma**. References to the original project should acknowledge its creator, while also respecting the work, licenses, and rights of contributors and third-party technology providers.
-
-**Created by Divyanshu Verma.**  
-**A project of Divyanshu Industries.**  
-**JARVIS Mark 55 — intelligent computing, built with a vision.**
+**Project:** JARVIS Mark 55 (Mark-LV)  
+**Original Creator, Chief Architect & Lead Engineer:** Divyanshu Verma  
+**Organization / Brand:** Divyanshu Industries  
+**Copyright:** © 2026 Divyanshu Verma. All Rights Reserved.  
+**License:** [Proprietary — All Rights Reserved](./LICENSE)  
+**Third-Party Notices:** [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md)  
 
 ---
 
-*Last updated: October 2026*
+## 1. The Creator: Divyanshu Verma
+
+JARVIS Mark 55 is an independent, sovereign artificial intelligence operating system conceived, architected, and engineered by **Divyanshu Verma**.
+
+### Creator Profile & Biography
+- **Full Name:** Divyanshu Verma
+- **Age:** 17 years old (Born February 27, 2009 in Bandikui, Dausa; based in Jaipur, Rajasthan, India)
+- **Academic Background:** Class 11th Commerce Student
+- **Role:** Founder, Chief Architect, and Lead Developer at **Divyanshu Industries**
+- **Specialization:** Autonomous AI Systems Architecture, Multi-Model Orchestration, Native Audio/Vision Pipelines, Hard-Core Vibe Coding
+- **Vision & Ambition:** Crafting true sovereign personal artificial intelligence that frees users from corporate walled gardens, cloud subscriptions, and paywalls. Scaling Divyanshu Industries into an AI-native operational powerhouse with an uncompromising ambition to build transformative generational technology and stand among the world's foremost technology leaders.
+- **Primary Hardware & Engineering Stack:**
+  - **MacBook Air M5** (Apple Silicon, macOS — Primary workstation and build target)
+  - **Motorola Edge 60 Fusion** (Termux Linux environment for mobile development and remote orchestration)
+  - **Lenovo 81-MT** (Secondary testbed and multi-platform validation)
+
+### Official Channels & Verified Links
+- **GitHub Profile:** [https://github.com/divyanshuvermaai-png](https://github.com/divyanshuvermaai-png)
+- **Current Project Repository:** [https://github.com/divyanshuvermaai-png/jarvis-mark-55-by-divyanshu](https://github.com/divyanshuvermaai-png/jarvis-mark-55-by-divyanshu)
+- **YouTube Channel:** [@divyanshu_sovereign_agent](https://www.youtube.com/@divyanshu_sovereign_agent)
+- **Instagram (Official Brand):** [@the_divyanshu_group](https://www.instagram.com/the_divyanshu_group/)
+- **Instagram (Personal / Agent):** [@divyanshu_sovereign_agent](https://www.instagram.com/divyanshu_sovereign_agent/)
+- **Creator Portfolio:** [https://air-m5.lovable.app](https://air-m5.lovable.app)
+- **Official Direct Contact:** [divyanshuverma.ai@gmail.com](mailto:divyanshuverma.ai@gmail.com)
+
+---
+
+## 2. Original Architectural Work by Divyanshu Verma
+
+All original components, algorithmic pipelines, interface mechanics, and architectural integrations in JARVIS Mark 55 were created by Divyanshu Verma. Key original systems include:
+
+1. **Dual-Brain Multimodal Orchestration:**  
+   Bridging Gemini Live 24 kHz WebSocket bidirectional streaming with ultra-high-throughput Groq LPU reasoning (`qwen/qwen3.8-27b`) into a coherent conversational agent.
+2. **The 9-Model Resiliency Ladder:**  
+   A proprietary failover cascade routing user requests across prioritized models to ensure near-zero downtime even when upstream API quotas or network timeouts occur.
+3. **Software-Rendered 3D Avatar & Futuristic HUD:**  
+   A mathematically lightweight 3D facial wireframe mesh rendered in pure software via PyQt6 and NumPy transforms—rendering expressive gaze saccades, head tilts, and phoneme lip synchronization without requiring a dedicated 3D engine or discrete GPU.
+4. **HUD-Integrated Video Streaming & Self-Echo Shield:**  
+   Dual-stream audio synchronization that allows YouTube and media playback directly inside the holographic HUD core while acoustically filtering self-playback to prevent assistant feedback loops.
+5. **Cross-Platform Autonomous Computer Control:**  
+   A unified action engine providing natural language desktop interaction, window control, file system manipulation, and automation across macOS, Linux, and Windows.
+6. **Remote Mobile Control Portal:**  
+   An encrypted local HTTPS dashboard and WebSocket interface enabling remote phone-to-desktop monitoring and commands via QR token pairing.
+
+---
+
+## 3. Third-Party Technologies & Acknowledgements
+
+While the design, architecture, and original code are proprietary to Divyanshu Verma, JARVIS Mark 55 gratefully acknowledges the foundational open-source packages and services that make this project possible:
+
+- **GUI & Graphics:** [PyQt6 / Qt Project](https://riverbankcomputing.com/software/pyqt/) for the desktop framework.
+- **Mathematical Computation:** [NumPy](https://numpy.org/) for vector and matrix calculations.
+- **Media & Audio:** [sounddevice](https://github.com/spatialaudio/python-sounddevice) for low-latency streaming; [Pillow](https://python-pillow.org/) and [opencv-python](https://github.com/opencv/opencv-python) for image and frame operations; [yt-dlp](https://github.com/yt-dlp/yt-dlp) for video extraction.
+- **Web & Automation:** [Playwright](https://playwright.dev/) for headless/headed browser control; [Requests](https://requests.readthedocs.io/) and [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) for web interaction; [PyAutoGUI](https://github.com/asweigart/pyautogui) and [pyperclip](https://github.com/asweigart/pyperclip) for desktop inputs.
+- **System Telemetry:** [psutil](https://github.com/giampaolo/psutil) for hardware monitoring; [send2trash](https://github.com/arsenetar/send2trash) for safe file deletion.
+- **Remote Dashboard:** [FastAPI](https://fastapi.tiangolo.com/), [Uvicorn](https://www.uvicorn.org/), and [CryptoJS](https://github.com/brix/crypto-js).
+- **AI Model Providers:** Google Cloud AI (Gemini Live API) and Groq Inc. (Groq Cloud LPU Inference).
+
+A complete, verified matrix of all third-party dependencies, including their upstream licenses, project links, and required copyright notices, is maintained in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+
+---
+
+## 4. Attribution & Integrity Guidelines
+
+When sharing, demonstrating, or writing about JARVIS Mark 55:
+- Please cite the project as:  
+  > **"JARVIS Mark 55 — Created and Engineered by Divyanshu Verma (Divyanshu Industries)"**
+- Do not remove existing copyright, authorship, or licensing notices from the source code.
+- For usage permissions, evaluation guidelines, and restrictions, refer to [LICENSE](./LICENSE).
+
+---
+
+*Last Updated: October 2026*

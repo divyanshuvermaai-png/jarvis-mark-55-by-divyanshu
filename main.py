@@ -78,7 +78,7 @@ from actions.background_monitor import (
 )
 from actions.web_search        import _news as _fetch_news_sync
 from memory.config_manager     import (
-    get_brief_enabled, get_media_resolution, get_proactive_audio_enabled,
+    get_brief_enabled, get_live_temperature, get_media_resolution, get_proactive_audio_enabled,
     get_push_to_talk_enabled, get_thinking_enabled, get_turn_tuning, get_voice,
     get_wake_word_enabled, save_wake_word_enabled,    get_input_device, get_output_device,
 )
@@ -350,9 +350,10 @@ TOOL_DECLARATIONS = [
     {
         "name": "system_status",
         "description": (
-            "Returns real-time system metrics: CPU usage, RAM, GPU load, CPU temperature, "
-            "uptime, and process count. Use when the user asks about computer performance, "
-            "temperature, memory, or resource usage."
+            "Returns real-time system metrics: battery percentage, power/charging status, "
+            "CPU usage, RAM, GPU load, CPU temperature, uptime, and process count. "
+            "ALWAYS call this when the user asks about battery, charging, computer performance, "
+            "temperature, memory, or resource usage. NEVER guess or invent battery or CPU stats."
         ),
         "parameters": {
             "type": "OBJECT",
@@ -1146,6 +1147,10 @@ class JarvisLive:
                 "medium": types.MediaResolution.MEDIA_RESOLUTION_MEDIUM,
                 "high":   types.MediaResolution.MEDIA_RESOLUTION_HIGH,
             }[res]
+
+        # Temperature: calibrated to 0.3 (or user setting) to prevent hallucinations,
+        # wild guessing, and fabrication while keeping speech fluent and natural.
+        out["temperature"] = get_live_temperature()
 
         # Thinking is left at the server default deliberately. Forcing the budget
         # to zero was measured on gemini-3.1-flash-live over interleaved trials

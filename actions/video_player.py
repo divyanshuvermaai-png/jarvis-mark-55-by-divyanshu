@@ -90,13 +90,21 @@ def _resolve_youtube(url_or_query: str) -> tuple[str, str, str, str]:
                             "cannot be played inside the HUD. "
                             "Run: pip install yt-dlp")
 
-    try:
-        from actions.youtube_video import clean_youtube_query
-        cleaned = clean_youtube_query(url_or_query)
-    except Exception:
-        cleaned = url_or_query
+    raw = (url_or_query or "").strip()
 
-    query = url_or_query if _YT.search(url_or_query) else f"ytsearch1:{cleaned}"
+    try:
+        from actions.youtube_video import clean_youtube_query, _extract_video_id, _resolve_youtube_video
+        vid = _extract_video_id(raw)
+        # If it is not a direct working video ID or URL, resolve it via our smart resolver first
+        if not vid:
+            resolved_url, r_title, r_chan = _resolve_youtube_video(raw)
+            if resolved_url and "watch?v=" in resolved_url:
+                raw = resolved_url
+                vid = _extract_video_id(raw)
+    except Exception:
+        vid = None
+
+    query = raw if _YT.search(raw) else (f"https://www.youtube.com/watch?v={vid}" if vid else f"ytsearch1:{raw}")
     opts = {
         "quiet": True,
         "no_warnings": True,
@@ -132,6 +140,7 @@ def _resolve_youtube(url_or_query: str) -> tuple[str, str, str, str]:
         info = info["entries"][0]
     if not info:
         return "", "", "", "nothing was found for that."
+
 
     formats = [f for f in (info.get("formats") or [])
                if str(f.get("protocol") or "").startswith("http") and f.get("url")]
@@ -293,25 +302,21 @@ def video_player(parameters: dict = None, response=None, player=None,
         player.show_video(source, source.rsplit("/", 1)[-1][:44], muted=True)
         return "Playing that on the display, muted."
 
+    # Check whether to start muted or unmuted
+    explicit_unmute = params.get("muted") is False or params.get("unmute") is True or params.get("sound") is True
+    is_music_or_song = any(
+        w in source.lower()
+        for w in ("song", "music", "gana", "gaana", "track", "audio", "sound", "heal", "listen")
+    )
+    start_muted = not (explicit_unmute or is_music_or_song)
+
     # ANSWER FIRST, OPEN SECOND.
-    #
-    # Working out what to play takes seconds that nothing can remove: measured
-    # against YouTube, 3.3s for a spoken phrase (a search, then the video) and
-    # 2.0s for a link, plus however long Qt spends buffering before the first
-    # frame. Restricting yt-dlp to a lighter client was tried and is not the
-    # answer — the fast clients came back with zero usable formats.
-    #
-    # So the seconds stay, and what changes is where the user spends them:
-    # listening to JARVIS say it is coming, instead of watching nothing happen.
-    # The same shape whatsapp_call uses, and for the same reason.
-    threading.Thread(target=_play_youtube, args=(player, source, _begin_open()),
+    threading.Thread(target=_play_youtube, args=(player, source, _begin_open(), start_muted),
                      daemon=True, name="video-open").start()
-    # Deliberately a status line rather than a finished English sentence: the
-    # model writes the words, in the user's own language.
     return f"status=opening source={source}"
 
 
-def _play_youtube(player, source: str, token: int) -> None:
+def _play_youtube(player, source: str, token: int, muted: bool = True) -> None:
     """The part that takes seconds. Speaks only if something goes wrong —
     silence means the video is on screen, which the user can see for
     themselves."""
@@ -326,25 +331,27 @@ def _play_youtube(player, source: str, token: int) -> None:
 
     if url:
         try:
-            player.show_video(url, title or source, muted=True,
+            player.show_video(url, title or source, muted=muted,
                               audio_source=audio_url)
             return
         except Exception as e:                              # noqa: BLE001
             err = str(e)
 
-    # Resolution failed. Opening it in a browser is worse than playing it in the
-    # HUD, but it is a great deal better than doing nothing, and the reason is
-    # reported rather than swallowed.
-    page = source if _YT.search(source) else _search_page(source)
-    opened = ""
-    try:
-        webbrowser.open(page)
-        opened = " and it has been opened in the browser instead"
-    except Exception:
-        pass
-    _say(player, "Tell the user, in one short sentence in their own language: "
-                 f"'{source}' could not be played on the display "
-                 f"({err}){opened}.")
+    # Resolution failed.
+    print(f"[VideoPlayer] ⚠️ Could not play '{source}' on display: {err}")
+    # Do NOT open broken / unavailable URLs in the browser!
+    # Only fall back to search page if it was a search topic or recoverable
+    if _YT.search(source):
+        _say(player, "That video could not be played because it is unavailable or the link was invalid.")
+    else:
+        page = _search_page(source)
+        opened = ""
+        try:
+            webbrowser.open(page)
+            opened = " and it has been opened in the browser instead"
+        except Exception:
+            pass
+        _say(player, f"'{source}' could not be played on the display{opened}.")
 
 
 def _say(player, instruction: str) -> None:
@@ -359,39 +366,36 @@ def _say(player, instruction: str) -> None:
 TOOL = {
     "name": "video_player",
     "description": (
-        "Plays a VIDEO on the assistant's own display, where the avatar "
-        "normally is — and stops it, mutes it or unmutes it. Use whenever the "
-        "user wants to WATCH something directly on the display/screen: 'play the new Dune trailer', "
-        "'play C:/clips/holiday.mp4', 'put that video on the screen', "
-        "'stop the video', 'turn the sound on', 'mute it'. Accepts a local file path, a direct "
-        "video URL, a YouTube link, or a description to search YouTube for. "
-        "Video always starts MUTED — only call action='unmute' when the user "
-        "actually asks to hear it. "
-        "This returns the moment it is asked, before the picture appears: when "
-        "it answers 'status=opening', say in one short sentence that you are "
-        "putting it on the display, and do not wait or call it again. "
-        "Use this ONLY when user wants the video on the display HUD. "
-        "If the user wants to play a song/video in YouTube in their web browser or search YouTube, use 'youtube_video'."
+        "Plays a video directly inside the assistant's own UI display/HUD (in place of the avatar face on screen) "
+        "and controls playback (stop, mute, unmute). "
+        "Use ONLY when the user specifically wants to watch or preview a video directly ON THE DISPLAY / SCREEN / HUD: "
+        "'put that video on the screen', 'show the Dune trailer on display', 'play local clip holiday.mp4'. "
+        "CRITICAL: Pass the video title, search keywords, creator channel, or local path as PLAIN TEXT in source. "
+        "NEVER invent, guess, or hallucinate a YouTube URL. "
+        "NOTE: For general music listening, playing songs, or watching in the browser, use 'youtube_video' instead."
     ),
     "parameters": {
         "type": "OBJECT",
         "properties": {
             "action": {
                 "type": "STRING",
-                "description": ("'play' (default), 'stop' to close it, 'unmute' "
-                                "to turn the sound on, 'mute' to silence it."),
+                "description": "'play' (default), 'stop' to close it, 'unmute' to turn the sound on, 'mute' to silence it.",
                 "enum": ["play", "stop", "mute", "unmute"],
             },
             "source": {
                 "type": "STRING",
                 "description": (
-                    "For action='play': a local file path, a direct video URL, "
-                    "a YouTube link, or what to search YouTube for. Pass what "
-                    "the user actually named, in their own words."
+                    "The video title, description, creator channel, or local file path to play on the display. "
+                    "Pass plain text search terms. NEVER invent a fake youtube.com URL."
                 ),
+            },
+            "muted": {
+                "type": "BOOLEAN",
+                "description": "True to start muted (default for general clips), False if user asked for music/song/sound.",
             },
         },
         "required": ["action"],
     },
     "handler": video_player,
 }
+

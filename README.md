@@ -5,14 +5,14 @@
 **Conceived, Architected & Engineered by Divyanshu Verma**
 
 [![Platform](https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-00d2ff?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/divyanshuvermaai-png/jarvis-mark-55-by-divyanshu)
-[![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![AI Engine](https://img.shields.io/badge/Brain-Gemini%20Live%20%2B%20Groq-ff5500?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 [![UI Framework](https://img.shields.io/badge/GUI-PyQt6%20Sci--Fi%20HUD-41CD52?style=for-the-badge&logo=qt&logoColor=white)](https://riverbankcomputing.com/software/pyqt/)
 [![License](https://img.shields.io/badge/License-Proprietary%20%2F%20All%20Rights%20Reserved-red?style=for-the-badge)](./LICENSE)
 
 ---
 
-> *"JARVIS is not just an assistant — it is an extension of your digital sovereignty. Built from pure vision into an autonomous multimodal OS that can hear, see, speak, and command your computer in real-time."*
+> *"JARVIS is not merely an assistant — it is an extension of digital sovereignty. Conceived and engineered from pure vision into an autonomous, multimodal personal operating environment that perceives, reasons, speaks, and controls your computer in real-time."*
 
 </div>
 
@@ -23,36 +23,40 @@
 <div align="center">
 
 ### **Divyanshu Verma**
-**Founder & Chief Architect of Divyanshu Industries**  
-*Class 11th Commerce Student • Autonomous AI Systems Builder • Hard-Core Vibe Coder*
+**Founder, Chief Architect & Lead Engineer — Divyanshu Industries**  
+*17-Year-Old Class 11th Commerce Student • Autonomous AI Systems Builder • Hard-Core Vibe Coder*
 
 | Channel | Link |
 | :--- | :--- |
 | 📧 **Official Email** | [divyanshuverma.ai@gmail.com](mailto:divyanshuverma.ai@gmail.com) |
 | 📺 **YouTube** | [@divyanshu_sovereign_agent](https://www.youtube.com/@divyanshu_sovereign_agent) |
-| 📸 **Instagram (Official)** | [@the_divyanshu_group](https://www.instagram.com/the_divyanshu_group/) |
+| 📸 **Instagram (Official Brand)** | [@the_divyanshu_group](https://www.instagram.com/the_divyanshu_group/) |
 | 📸 **Instagram (Sovereign Agent)** | [@divyanshu_sovereign_agent](https://www.instagram.com/divyanshu_sovereign_agent/) |
-| 🌐 **Portfolio** | [air-m5.lovable.app](https://air-m5.lovable.app) |
-| 🐙 **GitHub** | [@divyanshuvermaai-png](https://github.com/divyanshuvermaai-png) |
+| 🌐 **Portfolio Website** | [air-m5.lovable.app](https://air-m5.lovable.app) |
+| 🐙 **GitHub Organization / Profile** | [@divyanshuvermaai-png](https://github.com/divyanshuvermaai-png) |
 
 </div>
 
-> **A message from the creator:**  
-> *"I am Divyanshu Verma, a 17-year-old high-school student in Class 11th with a single-minded obsession: crafting true autonomous personal intelligence without paywalls or corporate subscriptions. JARVIS Mark 55 represents hundreds of hours of hands-on architectural design, native C/Python audio-video pipelines, custom PyQt6 mathematics, and deep AI model orchestration. Welcome to the future of personal computing."*
+### About the Creator & The Vision
+**Divyanshu Verma** (born February 27, 2009 in Bandikui, Dausa; currently based in Jaipur, Rajasthan, India) is a 17-year-old student pursuing Class 11th Commerce with an uncompromising ambition: building sovereign personal artificial intelligence systems that break free from corporate walled gardens, cloud subscriptions, and locked APIs.
+
+Operating across a dedicated multi-device engineering setup — including a primary **MacBook Air M5** (Apple Silicon, macOS), a **Motorola Edge 60 Fusion** (running Termux Linux for mobile terminal builds), and a **Lenovo 81-MT** testbed — Divyanshu spends hundreds of hours designing native C/Python audio-video streaming pipelines, software-rendered 3D vector geometry, and multi-model AI failover architectures.
+
+His overarching objective with **Divyanshu Industries** is to scale an AI-native operational powerhouse, architect transformative personal intelligence software, reach the top 0.0001% net worth bracket, and rival the world's foremost technology titans by age 40.
 
 ---
 
 ## 🌟 Overview: What is JARVIS Mark 55?
 
-**JARVIS Mark 55 (Mark-LV)** is a fully autonomous, cross-platform personal AI operating environment built for **macOS (Apple Silicon & Intel)**, **Linux**, and **Windows**. 
+**JARVIS Mark 55 (Mark-LV)** is a cross-platform, autonomous personal AI desktop operating environment. Designed for **macOS (Apple Silicon & Intel)**, **Linux**, and **Windows**, Mark 55 combines real-time conversational intelligence with hands-on computer control.
 
-Mark LIV gave JARVIS a face — **Mark LV gives it complete visual consciousness, live video rendering inside the holographic HUD, and a fail-safe multi-model resilience ladder** that keeps running even during API outages.
+While Mark LIV introduced an initial facial representation, **Mark 55 introduces full visual consciousness, an embedded video streaming canvas directly inside the holographic HUD, a resilient 9-model API fallback ladder, and comprehensive cross-platform system execution.**
 
-Say *"play the new Dune trailer"* and the video streams directly **where the holographic avatar sits**, in sync with dual audio-video pipelines, completely integrated into the HUD. When you speak, JARVIS talks back with native 24 kHz Gemini Live bidirectional audio, ultra-fast Groq code reasoning, and full computer control capabilities.
+Speak naturally to JARVIS, and it responds with low-latency bidirectional 24 kHz audio via Google Gemini Live, executes complex code tasks via Groq LPU acceleration, browses the web autonomously via Playwright, and renders reactive 3D facial animation in pure software — without requiring a high-end dedicated GPU.
 
 ---
 
-## ⚡ Key Highlights & Core Capabilities
+## ⚡ Architecture & Verified Capabilities
 
 ```
                   ┌──────────────────────────────────────────────┐
@@ -66,211 +70,325 @@ Say *"play the new Dune trailer"* and the video streams directly **where the hol
  ├───────────────┤               ├───────────────┤               ├───────────────┤
  │ • Gemini Live │               │ • PyQt6 Arc   │               │ • App Launch  │
  │ • Groq Qwen   │               │   Reactor HUD │               │ • Screen Vision│
- │ • 9-Model     │               │ • 3D Avatar   │               │ • File Control│
+ │ • 9-Model     │               │ • 3D Avatar   │               │ • File Ops    │
  │   Fail-Safe   │               │ • HUD Video   │               │ • Automations │
  │ • Local VAD   │               │ • Reactive FX │               │ • Blender MCP │
  └───────────────┘               └───────────────┘               └───────────────┘
 ```
 
-### 🧠 1. Dual-Engine Intelligence & Fail-Safe Model Ladder
-- **Gemini Live Bidirectional Streaming:** Zero-latency natural conversation via native 24 kHz WebSocket audio streaming.
-- **Groq High-Speed Reasoning:** Blazing-fast coding and execution agent backed by Groq's high-throughput LPU inference (`qwen/qwen3.8-27b`).
-- **9-Model Resiliency Ladder:** Every request cascades across a prioritized ladder of 9 distinct models. If any model reaches quota or experiences timeouts, JARVIS automatically steps down the ladder with zero dropped conversations.
+### 🧠 1. Dual-Brain Intelligence & 9-Model Resiliency Ladder
+- **Gemini Live Bidirectional Streaming:** High-fidelity, natural turn-taking conversation over native 24 kHz WebSocket audio streaming (`google-genai`).
+- **Groq LPU Code Acceleration:** Rapid code generation, syntax repair, and file editing powered by high-throughput Groq LPU inference (`qwen/qwen3.8-27b`).
+- **Multi-Model Resiliency Ladder:** Requests cascade across an ordered failover ladder in [`core/llm_client.py`](./core/llm_client.py). If primary model quotas or network timeouts occur, JARVIS automatically steps down through secondary models, preventing unhandled session dropouts.
+- **Configurable Live Temperature & Turn Tuning:** Grounded, deterministic tool invocation using a calibrated temperature (0.3) and voice activity detection buffers (2000 ms pause tolerance) in [`memory/config_manager.py`](./memory/config_manager.py).
 
-### 🧑‍🎤 2. Holographic 3D HUD & Facial Mesh
-- **Software-Rendered 3D Avatar:** Real 3D facial geometry lit and rendered with pure mathematical transforms — zero heavy 3D engine requirements.
-- **Formant & Transcript Lip-Sync:** 50 mouth shapes per second (closures, spreads, and rounds) reacting dynamically to phonemes and audio formants.
-- **Humanoid Micro-Expressions:** Gaze saccades, natural blinking rhythms, head tilts on stressed syllables, and cognitive status cues (looks away when thinking, locks eyes when listening).
-- **Embedded HUD Video Player:** YouTube and media stream playback directly inside the holographic core with automatic dual-stream audio syncing and smart mic muting.
+### 🧑‍🎤 2. Holographic 3D Avatar & Facial Mesh
+- **Software-Rendered 3D Wireframe Avatar:** Renders 3D facial geometry ([`core/face_model.obj`](./core/face_model.obj)) using mathematical projection via `QPainter` and `numpy`. Operates smoothly on integrated graphics without requiring OpenGL or a discrete GPU.
+- **Formant & Viseme Lip Synchronization:** Evaluates audio frequencies to map 50 mouth shapes per second (closures, spreads, rounds) in real time ([`core/viseme.py`](./core/viseme.py)).
+- **Expressive Micro-Behaviors:** Natural eye saccades, dynamic blink intervals, cognitive status cues (looks aside during LLM processing, makes eye contact when listening), and volume-reactive soundwave rings.
+- **HUD-Integrated Video Player:** Streams YouTube videos and local media directly inside the avatar canvas via `yt-dlp` and `QtMultimedia` ([`actions/video_player.py`](./actions/video_player.py)).
+- **Acoustic Self-Echo Shield:** Real-time software acoustic filtering ([`core/echo.py`](./core/echo.py)) prevents the assistant from hearing and looping its own audio output during video playback.
 
-### 🖥️ 3. Full Digital Autonomy & OS Mastery
-- **Cross-Platform System Control:** Native support for macOS, Linux, and Windows — volume, brightness, power state, and running processes.
-- **Computer Vision & Screen Awareness:** Real-time desktop screenshot capture and webcam analysis fed directly into the model context.
-- **File System Operations:** Search, summarize, organize, and edit files through conversational instructions with safety rollbacks and undo functionality.
-- **Irreversible Action Safeguards:** Destructive actions (restarts, power off, network disconnections) require physical user confirmation through dedicated UI controls.
+### 🖥️ 3. Autonomous Computer Control & Safeguards
+- **Cross-Platform System Management:** Adjusts audio volume, screen brightness, active applications, and window geometry natively across macOS (`osascript`), Linux (`pactl` / `brightnessctl`), and Windows (`pywin32` / `pycaw`).
+- **Computer Vision & Desktop Perception:** Captures desktop screenshots and webcam frames to analyze active applications, error dialogs, and documents.
+- **File System Operations:** Reads, summarizes, creates, and organizes documents (`.pdf`, `.docx`, `.pptx`, `.xlsx`, `.txt`). File deletions route through `send2trash` for safe recovery.
+- **Destructive Action Confirmation Modal:** Potentially dangerous operations (system reboot, shutdown, bulk deletions, process kills) trigger a blocking PyQt6 physical confirmation dialog ([`core/confirm.py`](./core/confirm.py)) before execution.
+- **Action Rollback & Undo:** Tracks file and system changes on an undo stack ([`core/undo.py`](./core/undo.py)) to revert unintended operations upon request.
 
-### 🧩 4. Extensible Plugins & Model Context Protocol (MCP)
-- **Zero-Boilerplate Plugins:** Drop a `.py` module into `plugins/` and JARVIS auto-discovers and registers the capability at next launch.
-- **Blender 3D MCP Integration:** Direct bridge into Blender for 3D modeling and procedural scene creation.
-- **Google Antigravity Bridge:** Seamless integration into modern agentic workflows and local build engines.
+### 🧩 4. Extensibility, MCP & Remote Dashboard
+- **Drop-In Plugin Architecture:** Place a self-contained Python module into [`plugins/`](./plugins/) using [`plugins/_template.py`](./plugins/_template.py); the action loader dynamically registers tools on the next launch.
+- **Model Context Protocol (MCP) Bridges:** Integrates external systems, including local Blender 3D procedural scene generation ([`plugins/blender_mcp.py`](./plugins/blender_mcp.py)) and Google Antigravity IDE agent coordination ([`plugins/antigravity_mcp.py`](./plugins/antigravity_mcp.py)).
+- **Encrypted Remote Web Dashboard:** Run an authenticated local HTTPS / WebSocket dashboard ([`dashboard/server.py`](./dashboard/server.py)) to monitor system telemetry, trigger actions, and speak to JARVIS from a mobile phone using QR-token pairing.
+- **Local Wake Word & Push-to-Talk:** Supports offline "Hey Jarvis" activation via optional `openWakeWord` or global keyboard chords (`Ctrl+Space`).
 
-### 🔒 5. Total Privacy & Digital Sovereignty
-- **Direct API Keys:** No subscriptions, no third-party telemetry, no middlemen. Your API keys stay in your local machine.
-- **Local Push-to-Talk & Wake Word:** Offline wake word detection (`Hey Jarvis`) with optional global push-to-talk hotkeys (`Ctrl+Space`).
-- **Self-Echo Guard:** Acoustically recognizes its own speech playback and prevents self-looping without muting your input.
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technologies & Libraries |
+| :--- | :--- |
+| **Language Runtime** | Python 3.11, 3.12, 3.13 (Hard minimum: Python 3.11) |
+| **Desktop GUI & Rendering** | PyQt6, QtMultimedia, NumPy (software 3D projection) |
+| **Multimodal Intelligence** | Google Gemini Live SDK (`google-genai`), Groq Python SDK |
+| **Audio Processing** | `sounddevice`, `numpy`, formant viseme analysis, `Edge-TTS` fallback |
+| **Vision & Screen Perception** | `mss`, `opencv-python`, `pillow` (PIL) |
+| **Browser & Input Automation**| Playwright (Chromium/Firefox), PyAutoGUI, pyperclip |
+| **System & File Management** | `psutil`, `send2trash`, `python-docx`, `pdfplumber`, `python-pptx`, `openpyxl` |
+| **Remote Dashboard** | FastAPI, Uvicorn, Cryptography (TLS), WebSockets, CryptoJS |
+| **Media Extraction** | `yt-dlp`, `youtube-transcript-api` |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-Mark-LV-main/
+jarvis-mark-55-by-divyanshu/
 ├── actions/                  # Autonomous computer control and tools
-│   ├── background_monitor.py # Scheduled headline and topic monitoring
-│   ├── browser_control.py    # Voice-driven web browser automation
-│   ├── code_helper.py       # High-speed Groq code generation
-│   ├── computer_control.py   # Native OS system commands (volume, brightness, power)
-│   ├── computer_settings.py  # System settings management
-│   ├── desktop.py            # Window and taskbar desktop control
-│   ├── dev_agent.py          # Multi-step autonomous planning engine
-│   ├── file_controller.py    # Local filesystem reading and writing
-│   ├── file_processor.py     # Document summarization and analysis
-│   ├── screen_processor.py   # Screen capture and visual perception
-│   ├── send_message.py       # WhatsApp, Telegram, and messaging tools
-│   ├── system_monitor.py     # CPU, RAM, GPU, and thermal telemetry
-│   ├── video_player.py       # HUD-integrated video and YouTube streaming
-│   ├── weather_report.py     # Real-time weather reporting
-│   └── web_search.py         # Multi-mode search (Grounded / DDG)
-│
-├── config/                   # Configuration management
-│   ├── __init__.py           # Cross-platform environment resolution
-│   ├── api_keys.json.example # Template for user credentials
-│   └── jarvis.ico            # High-resolution application icon
-│
-├── core/                     # Core runtime, rendering, and AI engines
-│   ├── action_loader.py      # Dynamic tool registration engine
+│   ├── background_monitor.py # Scheduled headline, market, and topic monitoring
+│   ├── browser_control.py    # Voice-driven web browser automation via Playwright
+│   ├── code_helper.py        # High-speed Groq/Qwen code generation and file writing
+│   ├── computer_control.py   # Native OS control (volume, brightness, power)
+│   ├── computer_settings.py  # System settings and display management
+│   ├── desktop.py            # Window management, taskbar, and application switcher
+│   ├── dev_agent.py          # Multi-step autonomous planning and self-correction
+│   ├── file_controller.py    # Local filesystem reading, writing, and safe deletion
+│   ├── file_processor.py     # Document reading and analysis (PDF, DOCX, PPTX, XLSX)
+│   ├── flight_finder.py      # Real-time flight search and itinerary extraction
+│   ├── game_updater.py       # Game update tracking and Steam client automation
+│   ├── notifier.py           # Native OS desktop banner notifications
+│   ├── open_app.py           # Cross-platform application launcher
+│   ├── proactive.py          # Proactive routine alerts and context suggestions
+│   ├── reminder.py           # Local calendar reminders and scheduled timers
+│   ├── scheduler.py          # Persistent cron and interval task manager
+│   ├── screen_processor.py   # Screen capture perception and webcam frame analysis
+│   ├── send_message.py       # WhatsApp Web and Telegram automation
+│   ├── system_monitor.py     # Hardware telemetry (CPU, RAM, GPU, thermal metrics)
+│   ├── video_player.py       # HUD-integrated video and media streaming
+│   ├── weather_report.py     # Real-time weather data retrieval
+│   ├── web_search.py         # Search query synthesis (Google / DuckDuckGo)
+│   └── youtube_video.py      # YouTube search, direct stream playback, and transcripts
+├── config/                   # Configuration, icons, and credentials template
+│   ├── __init__.py           # Cross-platform environment and path resolver
+│   ├── api_keys.json.example # Clean template with documented options
+│   ├── jarvis.ico            # Windows application icon
+│   ├── jarvis.png            # High-resolution HUD logo
+│   ├── logo.png              # Sci-Fi arc-reactor brand logo
+│   ├── jarvis.icns           # macOS bundle icon
+│   └── AppIcon.icns          # macOS application icon
+├── core/                     # Core runtime, rendering, and AI orchestration engines
+│   ├── __init__.py           # Package initializer
+│   ├── action_loader.py      # Dynamic tool discovery and schema binding
 │   ├── antigravity_bridge.py # Antigravity agentic workspace bridge
-│   ├── avatar.py             # 3D holographic avatar rendering
-│   ├── avatar_mesh.py        # 3D facial vertices and wireframe geometry
-│   ├── blender_bridge.py     # Blender automation bridge
-│   ├── confirm.py            # Safety confirmation modal logic
-│   ├── echo.py               # Self-echo acoustic filtering
+│   ├── audio_devices.py      # Audio input/output device detection and persistence
+│   ├── avatar.py             # 3D holographic avatar rendering and facial animator
+│   ├── avatar_mesh.py        # 3D facial vertices and wireframe transform calculations
+│   ├── blender_bridge.py     # Local Blender headless automation bridge
+│   ├── confirm.py            # Safety confirmation modal logic for sensitive actions
+│   ├── echo.py               # Self-echo acoustic suppression filter
+│   ├── face_model.obj        # 3D facial geometry vertex data
+│   ├── face_model.mtl        # Material template definition
 │   ├── gantry_viewer.py      # Interactive 3D HUD gantry viewport
-│   ├── gemini.py             # Native Gemini Live WebSocket engine
-│   ├── groq_client.py        # Ultra-fast Groq LPU client
-│   ├── installer.py          # Dynamic dependency auto-installer
-│   ├── llm_client.py         # Multi-model resiliency ladder
-│   ├── prompt.txt            # Master personality and instructions prompt
-│   ├── screen_share.py       # Multimodal visual pipeline
-│   ├── stt.py                # Speech-to-text fallback engines
-│   ├── tts.py                # Speech synthesis (Edge-TTS / Kokoro)
-│   ├── undo.py               # Action rollback and history management
-│   ├── viseme.py             # Phoneme-to-viseme lip-sync reduction
-│   └── wake_word.py          # Local wake-word listening loop
-│
-├── dashboard/                # Remote web control dashboard
-│   ├── server.py             # Local HTTPS web server
-│   └── static/               # Sci-Fi web portal assets
-│
-├── memory/                   # Context and memory retention
-│   ├── config_manager.py     # Dynamic configuration persistence
-│   └── memory_manager.py     # Fact extraction and long-term memory
-│
-├── plugins/                  # Extensibility modules
-│   ├── antigravity_mcp.py    # Antigravity tool bridge
-│   └── blender_mcp.py        # Blender Model Context Protocol tool
-│
-├── .gitignore                # Production ignore rules (secrets protected)
-├── CREDITS.md                # Official project credits & attribution
-├── LICENSE                   # Proprietary software license & IP notice
-├── demo_avatar.py            # Standalone 3D avatar preview utility
-├── main.py                   # Main bootstrapper and application lifecycle
-├── requirements.txt          # Python dependencies
-├── setup.py                  # Standard packaging setup
-└── ui.py                     # Master PyQt6 futuristic HUD interface
+│   ├── gemini.py             # Native Gemini Live 24 kHz WebSocket client
+│   ├── groq_client.py        # Ultra-fast Groq LPU inference client
+│   ├── hotkey.py             # Global keyboard chord hooks (push-to-talk)
+│   ├── installer.py          # Runtime dependency dynamic installer
+│   ├── llm_client.py         # Multi-model resiliency ladder and failover router
+│   ├── notifier.py           # Core notification distribution pipeline
+│   ├── plugin_loader.py      # Drop-in plugin manager and sandboxing
+│   ├── prompt.txt            # Master personality directives and behavioral rules
+│   ├── scheduler.py          # Background routine loop and timer dispatcher
+│   ├── screen_share.py       # Live visual context capture and token stream pipeline
+│   ├── stt.py                # Local speech-to-text fallback engines
+│   ├── telegram_bridge.py    # Remote Telegram command listener and response relay
+│   ├── tts.py                # Speech synthesis fallback (Edge-TTS / system speech)
+│   ├── undo.py               # Action history stack and rollback controller
+│   ├── viseme.py             # Phoneme-to-viseme lip-sync reduction engine
+│   └── wake_word.py          # Local wake-word listening loop ("Hey Jarvis")
+├── dashboard/                # Remote web control portal
+│   ├── __init__.py           # Package initializer
+│   ├── server.py             # Local HTTPS FastAPI server with WebSocket relays
+│   └── static/               # Web client UI (HTML, CSS, JS, Crypto-JS)
+│       ├── app.html          # Remote HUD telemetry and voice interface
+│       ├── crypto-js.min.js  # Client-side cryptographic pairing utilities
+│       ├── login.html        # QR-authenticated mobile entry portal
+│       └── logo.png          # Portal branding asset
+├── memory/                   # Context storage and persistence
+│   ├── __init__.py           # Package initializer
+│   ├── config_manager.py     # Dynamic configuration read/write manager
+│   ├── memory_manager.py     # Long-term knowledge base and fact extraction
+│   └── schedules.json        # User-defined schedules and routine timers
+├── plugins/                  # Extensibility directory for custom actions
+│   ├── __init__.py           # Package initializer
+│   ├── _template.py          # Starter template for authoring custom plugins
+│   ├── antigravity_mcp.py    # Antigravity tool and subagent connector
+│   └── blender_mcp.py        # Blender Model Context Protocol tool provider
+├── scripts/                  # Development and packaging automation
+│   └── build_windows_installer.py # Standalone NSIS Windows binary compiler
+├── .gitignore                # Production ignore patterns protecting user secrets
+├── CREDITS.md                # Official project credits and creator biography
+├── LICENSE                   # Proprietary software license & evaluation terms
+├── README.md                 # Main project landing page and documentation
+├── SECURITY.md               # Security policy and vulnerability disclosure guide
+├── THIRD_PARTY_NOTICES.md    # Verified third-party dependencies and notices
+├── demo_avatar.py            # Standalone 3D avatar & lip-sync preview test utility
+├── main.py                   # Application entry point and lifecycle bootstrapper
+├── requirements.txt          # Python dependency definitions with OS platform markers
+├── setup.py                  # One-time automated environment and Playwright installer
+└── ui.py                     # Master PyQt6 futuristic HUD desktop interface
 ```
 
 ---
 
-## 🚀 Quick Start Guide
+## 💻 System Requirements & Supported Platforms
 
-### 1. Prerequisites
-- **Python 3.10, 3.11, or 3.12** installed on your system.
-- An active **Gemini API Key** from [Google AI Studio](https://aistudio.google.com/).
-- *(Optional)* A **Groq API Key** from [Groq Console](https://console.groq.com/) for ultra-fast coding acceleration.
+| Operating System | Supported Architectures | Notes |
+| :--- | :--- | :--- |
+| **macOS** | Apple Silicon (M1/M2/M3/M4/M5), Intel (x86_64) | macOS 12+ recommended. Built-in `osascript` handles volume, brightness, reminders. |
+| **Linux** | Ubuntu / Debian / Fedora / Arch (x86_64) | Requires X11 or Wayland with XWayland. Native tools: `pulseaudio-utils` (`pactl`), `brightnessctl`. |
+| **Windows** | Windows 10, Windows 11 (64-bit) | Automatically installs Windows-specific extensions (`pywin32`, `pycaw`, `pywinauto`). |
 
-### 2. Clone the Repository
+### Python Requirements
+- **Minimum Required Version:** Python **3.11** (syntax requirement for modern typing and asyncio constructs).
+- **Verified & Tested Versions:** Python **3.11**, **3.12**, and **3.13**.
+- Interpreters below 3.11 will be rejected during setup check.
+
+---
+
+## 🚀 Installation & Setup Guide
+
+### Step 1: Clone the Repository
 ```bash
 git clone https://github.com/divyanshuvermaai-png/jarvis-mark-55-by-divyanshu.git
 cd jarvis-mark-55-by-divyanshu
 ```
 
-### 3. Create a Virtual Environment
+### Step 2: Create and Activate a Virtual Environment
+
+**macOS / Linux:**
 ```bash
-# macOS / Linux
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
-# Windows (Command Prompt)
+**Windows (Command Prompt / PowerShell):**
+```cmd
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 4. Install Dependencies
+### Step 3: Run the Automated Setup Script
+Run [`setup.py`](./setup.py). It automatically checks your Python version, installs dependencies tailored to your operating system via platform markers in [`requirements.txt`](./requirements.txt), and downloads the Playwright browser binaries required for browser automation:
+```bash
+python setup.py
+```
+
+*(Manual Alternative):* If you prefer manual installation:
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-### 5. Configure Your Credentials
-Copy the sample config template to `config/api_keys.json`:
-```bash
-cp config/api_keys.json.example config/api_keys.json
-```
-Edit `config/api_keys.json` with your API keys:
-```json
-{
-  "gemini_api_key": "YOUR_GEMINI_API_KEY",
-  "groq_api_key": "YOUR_GROQ_API_KEY",
-  "assistant_name": "JARVIS",
-  "user_name": "Boss",
-  "os_system": "mac",
-  "push_to_talk_enabled": false
-}
-```
-
-> 🔒 **Security Notice:** `config/api_keys.json` is strictly ignored by `.gitignore`. Your keys will never be committed or uploaded.
-
-### 6. Launch J.A.R.V.I.S. Mark 55
-```bash
-python3 main.py
+python -m playwright install chromium firefox
 ```
 
 ---
 
-## 🎨 Interactive Avatar Demo
-Want to preview the 3D facial mesh, test lip-sync visemes, and inspect HUD themes without running the full background OS service? Run:
+## ⚙️ Configuration & API Credentials
+
+1. Copy the example template [`config/api_keys.json.example`](./config/api_keys.json.example) to create your local config file:
+   ```bash
+   cp config/api_keys.json.example config/api_keys.json
+   ```
+2. Open `config/api_keys.json` in your text editor and provide your keys:
+   ```json
+   {
+     "gemini_api_key": "YOUR_GEMINI_API_KEY",
+     "groq_api_key": "YOUR_GROQ_API_KEY",
+     "groq_coding_model": "qwen/qwen3.8-27b",
+     "assistant_name": "JARVIS",
+     "user_name": "Boss",
+     "os_system": "mac",
+     "hud_style": "core",
+     "voice_name": "Charon",
+     "wake_word_enabled": false,
+     "push_to_talk_enabled": false,
+     "live_temperature": 0.3,
+     "thinking_enabled": false,
+     "media_resolution": "medium",
+     "camera_index": 0,
+     "morning_brief_enabled": true,
+     "input_device": "",
+     "output_device": "",
+     "turn_tuning": {
+       "enabled": true,
+       "silence_ms": 2000,
+       "prefix_ms": 250,
+       "end_sensitivity": "low",
+       "start_sensitivity": "default"
+     },
+     "proactive_audio": false,
+     "telegram_bot_token": "YOUR_TELEGRAM_BOT_TOKEN_FROM_BOTFATHER",
+     "telegram_chat_id": "YOUR_TELEGRAM_CHAT_ID"
+   }
+   ```
+   - **`gemini_api_key` (Required):** Obtainable from [Google AI Studio](https://aistudio.google.com/).
+   - **`groq_api_key` (Optional):** Obtainable from [Groq Console](https://console.groq.com/) for fast code reasoning.
+   - **`voice_name`:** Supported Gemini Live voices: `Charon`, `Puck`, `Kore`, `Fenrir`, `Aoede`.
+   - **`os_system`:** Set to `"mac"`, `"linux"`, or `"windows"`.
+
+---
+
+## 🎬 Launching JARVIS Mark 55
+
+### Main Application
 ```bash
-python3 demo_avatar.py
+python main.py
+```
+On initial boot, JARVIS initializes audio streaming, binds system actions, loads active plugins, and displays the futuristic PyQt6 holographic HUD. If no key was pre-configured, a first-run setup dialog prompts for your Gemini API key.
+
+### Standalone Avatar Demo
+To test 3D facial rendering, test viseme mouth shapes, or preview HUD centerpieces without running the full background OS service:
+```bash
+python demo_avatar.py
 ```
 
 ---
 
-## 📜 Official Intellectual Property & License Notice
+## 🔒 Privacy, Security & Data Boundaries
 
-This project is licensed under the **JARVIS MARK 55 — Proprietary Software License and Intellectual Property Notice**.
+1. **Local vs. External Transmission:**
+   - Your API keys, configuration, custom plugins, and schedule files are stored locally on your device.
+   - When conversational voice or vision features are used, audio streams, text prompts, and requested screenshots are transmitted to the configured AI API providers (Google Cloud / Groq) to perform inference.
+2. **Secrets Protection:**
+   - [`config/api_keys.json`](./config/api_keys.json), TLS certificates (`config/certs/`), session tokens, and long-term memory are excluded by [`.gitignore`](./.gitignore).
+   - **Important:** `.gitignore` only prevents newly added files from being staged; it cannot retroactively protect files that are forced into Git. Users must remain vigilant never to commit credentials or sensitive files into public forks.
+3. **Execution Safety:**
+   - Destructive actions (system power states, mass deletions, process kills) require user confirmation via physical click on the confirmation modal.
+   - Refer to [SECURITY.md](./SECURITY.md) for vulnerability disclosure procedures.
+
+---
+
+## ⚠️ Known Limitations & Optional Features
+
+- **Local Wake Word ("Hey Jarvis"):** Local wake-word gating is optional and powered by `openWakeWord`. It can be enabled in settings (`⚙ → WAKE WORD`) and requires installing the optional package (`pip install openwakeword`).
+- **Playwright Browser Binaries:** Browser automation features require Chromium/Firefox binaries (`python -m playwright install chromium firefox`). If omitted, other desktop and voice features remain fully functional.
+- **Third-Party API Quotas:** Real-time conversational speed and uptime depend on upstream provider availability and your API rate limits.
+- **Wayland Compatibility:** On Linux environments running Wayland, some desktop input automation functions may require XWayland or native desktop permissions.
+
+---
+
+## 📜 Intellectual Property & Licensing
+
+JARVIS Mark 55 is proprietary software authored and owned by **Divyanshu Verma**.
 
 ```
 Copyright © 2026 Divyanshu Verma. All Rights Reserved.
-
-JARVIS Mark 55, including its source code, software architecture, user interface, 
-graphical interface, visual elements, animations, voice interaction systems, 
-artificial intelligence integrations, and all original materials associated with 
-the project, is the intellectual property of Divyanshu Verma.
-
-This repository is published on GitHub for public viewing, demonstration, 
-educational reference, portfolio presentation, research, and evaluation purposes only.
+Organization / Brand: Divyanshu Industries
 ```
 
-- For the full proprietary license text and third-party open-source compliance matrix, see [LICENSE](./LICENSE).
-- For complete creator attribution, vision, and contributor guidelines, see [CREDITS.md](./CREDITS.md).
+- **Personal Evaluation License:** You are granted limited permission to download, view, study, and run an unmodified copy for personal, non-commercial evaluation and learning.
+- **Commercial Restrictions:** Redistribution, public re-hosting, commercial exploitation, rebranding, white-labeling, or distributing derivative works without prior written authorization from Divyanshu Verma is strictly prohibited.
+- **Third-Party Components:** Third-party libraries, frameworks, and APIs remain governed by their respective upstream open-source licenses.
+- Detailed licensing terms are documented in [LICENSE](./LICENSE).
+- Upstream open-source notices and compliance information are detailed in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+- Creator attribution guidelines are detailed in [CREDITS.md](./CREDITS.md).
 
 ---
 
-## 🤝 Connect with the Creator
+## 🤝 Connect with Divyanshu Verma
 
-If you have questions, business inquiries, or collaboration proposals:
+For commercial licensing, enterprise inquiries, sponsorships, or collaboration proposals:
 
-- 📧 **Email:** [divyanshuverma.ai@gmail.com](mailto:divyanshuverma.ai@gmail.com)
+- 📧 **Direct Email:** [divyanshuverma.ai@gmail.com](mailto:divyanshuverma.ai@gmail.com)
 - 📺 **YouTube:** [@divyanshu_sovereign_agent](https://www.youtube.com/@divyanshu_sovereign_agent)
 - 📸 **Instagram:** [@the_divyanshu_group](https://www.instagram.com/the_divyanshu_group/) & [@divyanshu_sovereign_agent](https://www.instagram.com/divyanshu_sovereign_agent/)
-- 🌐 **Web:** [air-m5.lovable.app](https://air-m5.lovable.app)
+- 🌐 **Portfolio:** [air-m5.lovable.app](https://air-m5.lovable.app)
+- 🐙 **GitHub:** [divyanshuvermaai-png](https://github.com/divyanshuvermaai-png)
 
 ---
 
 <div align="center">
 
-**Built with pride by Divyanshu Verma • Divyanshu Industries**  
+**Engineered with pride by Divyanshu Verma • Divyanshu Industries**  
 *JARVIS Mark 55 — Intelligent computing, built with a vision.*
 
 </div>

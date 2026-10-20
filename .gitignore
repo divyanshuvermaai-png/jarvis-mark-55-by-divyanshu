@@ -23,6 +23,10 @@ config/whatsapp_web/
 # ── Personal data the assistant accumulates about you ─────────────────────────
 memory/long_term.json
 memory/*.db
+memory/*.db-journal
+memory/*.db-wal
+memory/*.db-shm
+*.sqlite3
 
 # ── Python build noise ────────────────────────────────────────────────────────
 __pycache__/
@@ -33,6 +37,7 @@ build/
 dist/
 *.egg-info/
 .eggs/
+.pytest_cache/
 
 # ── Virtual environments ──────────────────────────────────────────────────────
 .venv/
@@ -63,3 +68,4 @@ IronMan_Mark7_Gantry_Production.blend1
 logs/
 downloads/
 screenshots/
+desktop/

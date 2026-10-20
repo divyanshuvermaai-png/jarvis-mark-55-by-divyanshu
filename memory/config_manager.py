@@ -157,6 +157,20 @@ def save_hud_style(style: str) -> None:
 # config behaves exactly like a configured one. Each value is also a way out:
 # if a future model dislikes one of these, set it back and nothing else changes.
 
+def get_live_temperature() -> float:
+    """Return the temperature for the Live session.
+    Defaults to 0.3 for grounded, deterministic tool calling without hallucinations."""
+    try:
+        val = float(load_api_keys().get("live_temperature", 0.3))
+        return max(0.0, min(1.0, val))
+    except Exception:
+        return 0.3
+
+
+def save_live_temperature(temp: float) -> None:
+    _save_flag("live_temperature", max(0.0, min(1.0, float(temp))))
+
+
 def get_thinking_enabled() -> bool:
     """Whether the Live model may spend tokens thinking before it answers.
 

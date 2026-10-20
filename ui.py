@@ -33,7 +33,7 @@ from PyQt6.QtCore import (
 )
 from PyQt6.QtGui import (
     QBrush, QColor, QConicalGradient, QDragEnterEvent, QDropEvent, QFont,
-    QFontDatabase, QKeySequence, QLinearGradient, QPainter, QPainterPath,
+    QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPainter, QPainterPath,
     QPen, QPixmap, QPolygonF, QRadialGradient, QShortcut,
 )
 # Video playback for the HUD. Part of PyQt6, so it costs no new dependency —
@@ -4562,6 +4562,19 @@ class MainWindow(QMainWindow):
         self.setMinimumSize(_MIN_W, _MIN_H)
         self.resize(_DEFAULT_W, _DEFAULT_H)
 
+        _ico_path = CONFIG_DIR / "jarvis.png"
+        if not _ico_path.exists():
+            _ico_path = CONFIG_DIR / "jarvis.ico"
+        if _ico_path.exists():
+            try:
+                _app_icon = QIcon(str(_ico_path))
+                self.setWindowIcon(_app_icon)
+                _q_app = QApplication.instance()
+                if _q_app:
+                    _q_app.setWindowIcon(_app_icon)
+            except Exception:
+                pass
+
         screen = QApplication.primaryScreen().availableGeometry()
         self.move(
             (screen.width()  - _DEFAULT_W) // 2,
@@ -5757,6 +5770,22 @@ class MainWindow(QMainWindow):
         # ── Left: System branding & drawers ──────────────────────────────────
         left_box = QHBoxLayout()
         left_box.setSpacing(8)
+
+        _logo_path = CONFIG_DIR / "jarvis.png"
+        if _logo_path.exists():
+            try:
+                logo_lbl = QLabel()
+                logo_lbl.setFixedSize(26, 26)
+                pix = QPixmap(str(_logo_path)).scaled(
+                    26, 26,
+                    Qt.AspectRatioMode.KeepAspectRatio,
+                    Qt.TransformationMode.SmoothTransformation,
+                )
+                logo_lbl.setPixmap(pix)
+                logo_lbl.setStyleSheet("background: transparent; border-radius: 4px;")
+                left_box.addWidget(logo_lbl)
+            except Exception:
+                pass
 
         sys_emblem = QLabel("◈ JARVIS OS")
         sys_emblem.setFont(QFont("Courier New", 10, QFont.Weight.Bold))
